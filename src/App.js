@@ -11,7 +11,7 @@ function App() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_WEATHER_API}&q=${location}&days=7&aqi=yes&alerts=yes`
+          `https://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_WEATHER_API}&q=${location}&days=7&aqi=yes&alerts=yes`
         );
         setWeatherData(response.data);
         setError("");
